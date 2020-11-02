@@ -1,0 +1,16 @@
+Catatan Flask
+
+video = [INSERT LINK HERE!]
+
+decorator = a kind of way to add addition fuctionality to a existing fuction
+
+@app.route("[]") = state a way to route in website
+ex: @app.route("/") → myweb.id/
+     @app.route("/home") → myweb.id/home
+
+environment variable, use:
+export [something_name] {for mac}
+set [something_name] {for windows}
+
+FLASK_DEBUG mode
+to make your website work along with the script (you change the script, the web change)
