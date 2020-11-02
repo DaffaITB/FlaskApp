@@ -1,0 +1,16 @@
+Link video: https://www.youtube.com/watch?v=cYWiDiIUxQc
+Make and edit database in terminal: 17:27–29:02
+
+In this chapter, we study how to make a database instead of dummy data, so that we can make an actual real person account and post
+
+What we gonna use?
+SQLAlchemy
+SQLite databases for development
+Postgres databases for production(launching)
+
+ORM = Object Relational Mapper
+memungkinkan kita untuk dapat mengakses dan menggunakan database, even if it several different databases
+
+we use flask-sqlalchemy package instead of SQLAlchemy package because the specific useful fiture for flask
+
+With SQLAlchemy, databases structure can be represented by classes, or so-called models

@@ -1,0 +1,6 @@
+Subject study: Create forms, validate users input
+Parameter: User can sign up, sign in, post, sign out, etc.
+
+Methods BUKAN method
+
+always inget "funcion()" BUKAN cuma "function"
