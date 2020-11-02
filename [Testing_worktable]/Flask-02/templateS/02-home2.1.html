@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+        <title>Flask/{{ title }}</title>
+    {% else %}
+        <title>Flask_title 404</title>
+    {% endif %}
+</head>
+<body>
+    {% for postingan in P %}
+        <h1>{{ postingan.Judul }}</h1>
+        <p>{{ postingan.Nama }} pada {{ postingan.Tanggal}}</p>
+        <p>{{ postingan.Isi }}</p>
+    {% endfor %}
+</body>
+</html>

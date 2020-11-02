@@ -1,0 +1,18 @@
+Video = https://www.youtube.com/watch?v=QnDWIZuWYW0
+
+fungsi render_template() hanya berlaku jika ada direktori "templates"
+[PERLI DIINGAT bukan template, tetapi boleh Templates ataupun TeMpLaTeS]
+
+gunakan {% func_name %} untuk menggunakan suatu fungsi di kode html
+
+untuk memulai for loop, gunakan {% for [u-choose-the_name] in [var_data_name}%}
+Isinya, {{ [u-choose-the_name].[data-in-var_name] }}
+untuk mengakhiri for loop. gunakan {% endfor %}
+
+templates inheritance, mother_template to child_template, "[mother_templates].html" to {% extends "[mother_templates].html" %} to {% block [block_name] %}
+adalah metode menurunkan sebuah templates ke templates² lainnya
+
+"extends" BUKAN "extend"
+
+CDN = Content Delivery Network
+isinya HTML-CSS-Javascript

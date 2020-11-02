@@ -1,0 +1,9 @@
+{% extends "[mother_templates_v3].html" %}
+
+{% block body %}
+    {% for postingan in P %}
+        <h1>{{ postingan.Judul }}</h1>
+        <p>{{ postingan.Nama }} pada {{ postingan.Tanggal}}</p>
+        <p>{{ postingan.Isi }}</p>
+    {% endfor %}
+{% endblock body %}
