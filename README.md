@@ -1,8 +1,8 @@
 # Tugas 5 FlaskApp
 
-Muhammad Daffa Rasyid
+Muhammad Daffa Rasyid   NIM 16520147
 
-NIM 16520147
+https://flaskapp-101.herokuapp.com/
 
 --------------------------------------------------------------------------
 
