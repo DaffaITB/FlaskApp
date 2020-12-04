@@ -8,4 +8,4 @@ https://flaskapp-101.herokuapp.com/
 
 Keterangan tambahan:
 
-Disini saya mengubah tampilah dari bahasa inggris menjadi bahasa indonesia
+Disini saya mengubah tampilan dari bahasa inggris menjadi bahasa indonesia
