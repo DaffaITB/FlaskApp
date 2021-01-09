@@ -1,0 +1,28 @@
+{% extends "[mother_templates_v1].html" %}
+
+{% block body %}
+    {% for postingan in pos.items %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ url_for('static', filename='gambar/foto user/' + postingan.author.profile_picture ) }}">
+            <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="{{ url_for('pos_pengguna', username=postingan.author.username) }}">{{ postingan.author.username }}</a>
+                <small class="text-muted">{{ postingan.Tanggal.strftime("%Y-%m-%d") }}</small>
+            </div>
+            <h2><a class="article-title" href="{{ url_for('pos', pos_id=postingan.id) }}">{{ postingan.Judul }}</a></h2>
+            <p class="article-content">{{ postingan.Isi }}</p>
+            </div>
+        </article>
+    {% endfor %}
+    {% for page_num in pos.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+        {% if page_num %}
+            {% if pos.page == page_num %}
+                <a class="btn btn-info mb-4" href="{{ url_for('beranda', page=page_num) }}">{{ page_num }}</a>
+            {% else %}
+                <a class="btn btn-outline-info mb-4" href="{{ url_for('beranda', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+        {% else %}
+        ...
+        {% endif %}
+    {% endfor %}
+{% endblock body %}
